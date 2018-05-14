@@ -4,6 +4,7 @@ add_cols <- function(x,y,where = 1){
   } else if (where>ncol(x)){
     cbind(x,y)
   } else {
-    
+    lhs <- 1:(where - 1)
+    cbind(x[lhs], y, x[-lhs])
   }
 }
