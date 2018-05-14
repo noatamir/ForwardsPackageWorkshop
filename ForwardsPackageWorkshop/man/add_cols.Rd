@@ -24,3 +24,6 @@ add_col(df, "y", runif(5), where = 1)
 
 add_col(df, "x", 5:1)
 }
+\seealso{
+[add_col][add_col()]
+}
