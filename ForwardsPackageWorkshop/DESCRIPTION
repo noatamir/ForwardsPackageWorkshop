@@ -1,6 +1,6 @@
 Package: ForwardsPackageWorkshop
 Version: 0.0.0.9000
-Title: What the Package Does (One Line, Title Case)
+Title: Some reusable tools for data wrangling
 Description: What the package does (one paragraph).
 Authors@R: person("Noa", "Tamir", email = "hello@noatamir.com", role = c("aut", "cre"))
 License: What license is it under?
