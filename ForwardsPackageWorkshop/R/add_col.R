@@ -10,6 +10,8 @@
 #' @param where Position to insert. Use 1 to insert on LHS, or -1 to insert on
 #'   RHS.
 #' @export
+#' @seealso [add_cols()]
+#' @family 
 #' @examples
 #' df <- data.frame(x = 1:5)
 #' add_col(df, "y", runif(5))
