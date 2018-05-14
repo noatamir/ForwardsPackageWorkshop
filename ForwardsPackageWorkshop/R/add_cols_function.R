@@ -1,3 +1,19 @@
+#' Add multiple columns to a data frame
+#'
+#' Similar to bind, but allows you to specify the position. 
+#'
+#' @param x A data frame.
+#' @param y Columns to insert into x.
+#' @param where Position to insert. Use 1 to insert on LHS, or -1 to insert on
+#'   RHS.
+#' @export
+#' @examples
+#' df <- data.frame(x = 1:5)
+#' add_col(df, "y", runif(5))
+#' add_col(df, "y", runif(5), where = 1)
+#'
+#' add_col(df, "x", 5:1)
+
 add_cols <- function(x, y, where = 1) {
   if (where == 1) {
     cbind(y, x)
@@ -8,7 +24,3 @@ add_cols <- function(x, y, where = 1) {
     cbind(x[lhs], y, x[-lhs])
   }
 }
- #' @param x data frame to insert columns into
- #' @param y the columns you want to insert
- #' @param where ordinal location for the insert, 1 means before all of the columns in x
- 
