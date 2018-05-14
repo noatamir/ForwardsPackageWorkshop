@@ -15,7 +15,7 @@ add_cols(x, y, where = 1)
 RHS.}
 }
 \description{
-Similar to bind, but allows you to specify the position.
+Similar to bind, but allows you to specify the position to insert the columns.
 }
 \examples{
 df <- data.frame(x = 1:5)
@@ -25,5 +25,5 @@ add_col(df, "y", runif(5), where = 1)
 add_col(df, "x", 5:1)
 }
 \seealso{
-[add_col][add_col()]
+[add_col()]
 }
